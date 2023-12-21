@@ -63,7 +63,7 @@ const SignupForm = () => {
     <Form {...form}>
       <div className="sm:w-420 flex-center flex-col">
         <img src="/assets/images/logo.png" alt="logo" />
-        <h2 className="h3-bold md:h2-bold pt-5 sm:pt-12">Create a new account</h2>
+        <h2 className="h3-bold md:h3-bold pt-5 sm:pt-12">Create a new account</h2>
         <p className="text-light-3" small-medium md:base-regular>Enter your details</p>
 
       <form onSubmit={form.handleSubmit(onSubmit)} className="flex-col gap-5 w-full mt-4">
@@ -125,7 +125,9 @@ const SignupForm = () => {
           <div className="flex-center gap-2">
             <Loader />Loading...
           </div>
-        ): ("Sign up")}
+        ): (
+          "Sign up"
+          )}
       </Button>
       
       <p className="text-regular-small text-light-2 text-center mt-2">
