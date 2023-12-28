@@ -11,9 +11,9 @@ const CreatePost = () => {
             height={36}
             alt="add" 
           />
+          <h2 className="h3-bold md:h2-bold text-left w-full">Create Post</h2>
         </div>
-        <h2 className="h3-bold md:h2-bold text-left w-full">Create Post</h2>
-      <PostForm />
+      <PostForm action="Create" />
       </div>
     </div>
   )

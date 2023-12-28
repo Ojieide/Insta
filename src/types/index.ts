@@ -64,7 +64,8 @@ export type FileUploaderProps = {
 };
 
 export type PostFormProps = {
-  post: Models.Document; 
+  post?: Models.Document; 
+  action: 'Create' | 'Update';
 };
 
 export type PostCardProps = {
