@@ -64,5 +64,14 @@ export type FileUploaderProps = {
 };
 
 export type PostFormProps = {
-  post?: Models.Document; 
+  post: Models.Document; 
+};
+
+export type PostCardProps = {
+  post: Models.Document; 
+};
+
+export type PostStatsProps = {
+  post: Models.Document;
+  userId: string;
 };
