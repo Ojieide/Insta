@@ -87,3 +87,7 @@ export type SearchResultsProps = {
   isSearchFetching: boolean;
   searchedPosts: Models.Document[];
 };
+
+export type UserCardProps = {
+  user: Models.Document;
+};
