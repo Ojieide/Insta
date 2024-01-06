@@ -1,12 +1,12 @@
 import { useToast } from "@/components/ui/use-toast";
-import { useGetUsers } from "@/lib/react-query/queriesAndMutations";
+import { useFetchUsers } from "@/lib/react-query/queriesAndMutations";
 import Loader from "@/components/shared/Loader";
 import UserCard from "@/components/shared/UserCard";
 
 const AllUsers = () => {
   const { toast } = useToast();
 
-  const { data: creators, isLoading, isError: isErrorCreators } = useGetUsers();
+  const { data: creators, isLoading, isError: isErrorCreators } = useFetchUsers();
 
   if (isErrorCreators) {
     toast({ title: "Something went wrong." });

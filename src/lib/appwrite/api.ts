@@ -362,7 +362,7 @@ export async function searchPosts(searchTerm: string) {
     }
 }
 
-export async function getUsers(limit?: number) {
+export async function fetchUsers(limit?: number) {
     const queries: any[] = [Query.orderDesc("$createdAt")];
   
     if (limit) {
@@ -384,7 +384,7 @@ export async function getUsers(limit?: number) {
     }
 }
 
-export async function getUserById(userId: string) {
+export async function fetchUserById(userId: string) {
     try {
       const user = await databases.getDocument(
         appwriteConfig.databaseId,
