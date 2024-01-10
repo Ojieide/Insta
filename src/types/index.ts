@@ -86,8 +86,13 @@ export type GridPostListProps = {
 export type SearchResultsProps = {
   isSearchFetching: boolean;
   searchedPosts: Models.Document[];
-};
+}
 
 export type UserCardProps = {
   user: Models.Document;
-};
+}
+
+export interface StabBlockProps {
+  value: string | number;
+  label: string;
+}
