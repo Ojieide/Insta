@@ -1,6 +1,6 @@
-import { SearchResultsProps } from "@/types";
 import Loader from "./Loader";
 import GridPostList from "./GridPostList";
+import { SearchResultsProps } from "@/types";
 
 const SearchResults = ({ isSearchFetching, searchedPosts }: SearchResultsProps) => {
   if(isSearchFetching) return <Loader />
