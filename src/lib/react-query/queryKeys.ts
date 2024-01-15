@@ -4,12 +4,12 @@ export enum QUERY_KEYS {
 
   // USER KEYS
   GET_CURRENT_USER = "getCurrentUser",
-  GET_USERS = "getUsers",
-  GET_USER_BY_ID = "getUserById",
+  GET_USERS = "fetchUsers",
+  GET_USER_BY_ID = "fetchUserById",
 
   // POST KEYS
   GET_POSTS = "getPosts",
-  GET_INFINITE_POSTS = "getInfinitePosts",
+  GET_INFINITE_POSTS = "fetchInfinitePosts",
   GET_RECENT_POSTS = "getRecentPosts",
   GET_POST_BY_ID = "getPostById",
   GET_USER_POSTS = "getUserPosts",
